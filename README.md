@@ -89,7 +89,7 @@ project/
    mlflow ui
    ```
 
-2. **Access MLflow Tracking UI:**
+2. **Open another terminal:**
     ```bash
    python linearregression.py --save-model
    ```
