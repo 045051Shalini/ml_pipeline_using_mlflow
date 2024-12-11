@@ -28,7 +28,10 @@ This project implements a comprehensive machine learning monitoring pipeline usi
 - Required Python packages:
   ```bash
   pip install -r requirements.txt
-  ```
+  ```bash
+  pip install -r requirements.txt
+  ```bash
+  pip install -r requirements.txt
 
 ---
 
