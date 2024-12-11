@@ -63,15 +63,16 @@ project/
    --host 0.0.0.0 \
    --port 5000
    ```
-2. Install requirements
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Install ml_monitor
+2. Install ml_monitor
    ```bash
    pip install ml_monitor
    pip install .
    ```
+3. Install requirements
+   ```bash
+   pip install -r requirements.txt
+   ```
+
 4. Install evidently ai
    ```bash
    pip install evidently
