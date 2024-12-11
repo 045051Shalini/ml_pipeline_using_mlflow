@@ -1,0 +1,8 @@
+pandas
+datetime
+evidently
+prometheus_client
+scikit-learn
+mlflow
+argparse
+ml_monitor
