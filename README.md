@@ -93,7 +93,11 @@ project/
    ```
 
 2. **Open another terminal:**
-    ```bash
+Before running follwoing commnad replace the path of reference and production data with your path in linearregression.py file as following:
+    reference_data = pd.read_csv('/home/user/project/reference_data.csv')
+    production_data = pd.read_csv('/home/user/project/current_data.csv')
+ Then run:  
+  ```bash
    python linearregression.py --save-model
    ```
 In case you are not able to see system metrics in mlflow ui then in terminal run following cmd and save model again
