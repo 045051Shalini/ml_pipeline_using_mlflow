@@ -1,6 +1,6 @@
 # ML Monitoring with Evidently AI, MLflow, Prometheus, and Grafana along ml_monitor real time tracking
 
-This project implements a comprehensive machine learning monitoring pipeline using **Evidently AI**, **MLflow**, **Prometheus Pushgateway**, and **Grafana**. It evaluates model performance, detects data drift, and enables real-time metric monitoring using ml_monitor.
+This project implements a comprehensive machine learning monitoring pipeline using **Evidently AI**, **MLflow**, **Prometheus**, and **Grafana**. It evaluates model performance, detects data drift, and enables real-time metric monitoring using ml_monitor.
 
 ---
 
