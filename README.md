@@ -38,9 +38,9 @@ project/
 │   ├── grafana/                   # Grafana configuration
 │       ├── provisioning/          # Grafana provisioning setup
 │           ├── dashboard/         # Grafana dashboards
-│           │   └── <dashboard_files>.json  # Dashboard files
+│           │   └── <dashboard_files>  # Dashboard files
 │           └── datasource/        # Grafana datasource setup
-│               └── <datasource_files>.yml  # Datasource configuration files
+│               └── <datasource_files> # Datasource configuration files
 │         
 └── setup.py                     # for installing and starting ml_monitor
 
