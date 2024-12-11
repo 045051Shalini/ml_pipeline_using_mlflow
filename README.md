@@ -58,7 +58,7 @@ project/
    ```bash
    cd project
    ```
-3. Install mlflow in the project folder
+3. Install mlflow:
    ```bash
    pip install mlflow
    mlflow server \
