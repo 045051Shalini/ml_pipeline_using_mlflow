@@ -36,14 +36,25 @@ This project implements a comprehensive machine learning monitoring pipeline usi
 
 ```
 project/
-├── artifacts/                     # Stores Evidently reports
+├── ml_monitor                     # Stores Evidently reports
 ├── reference_data.csv             # Reference dataset
 ├── current_data.csv               # Production dataset
 ├── requirements.txt               # Required Python packages
-├── main.py                        # Main script
-├── ml_monitor/config.yml          # Monitoring configuration
-├── grafana_dashboard.json         # Pre-configured Grafana dashboard
+├── linearregression.py            # Main script
+├── ml_monitor                     # Monitoring configuration
+├── docker/                        # Pre-configured Grafana and Prometheus Docker setup
+│   ├── docker-compose.yml         # Docker Compose file to launch Grafana and Prometheus
+│   ├── prometheus/                # Prometheus configuration
+│   │   └── prometheus.yml         # Prometheus configuration file
+│   ├── grafana/                   # Grafana configuration
+│   │   ├── provisioning/          # Grafana provisioning setup
+│   │   │   ├── dashboard/         # Grafana dashboards
+│   │   │   │   └── <dashboard_files>.json  # Dashboard files
+│   │   │   └── datasource/        # Grafana datasource setup
+│   │   │       └── <datasource_files>.yml  # Datasource configuration files
+│   └── <other_docker_files>       # Other necessary files for Docker setup
 └── README.md                      # Project documentation
+
 ```
 
 ---
