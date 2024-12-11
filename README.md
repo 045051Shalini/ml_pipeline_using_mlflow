@@ -48,7 +48,7 @@ project/
 
 1. Clone this repository:
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/045051Shalini/ml_pipeline_using_mlflow.git
    ```
 2. Navigate to the project directory:
    ```bash
