@@ -1,2 +1,2 @@
-from ml_monitor.prometheus.metrics import get_gauge, fetching_duration
+from ml_monitor.prometheus.metrics import get_gauge
 from ml_monitor.prometheus.metrics_collector import MetricsCollector
