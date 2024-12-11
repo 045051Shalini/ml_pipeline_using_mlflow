@@ -98,8 +98,8 @@ def main():
     client = MlflowClient(tracking_uri)
 
     # Load reference and production data from separate CSV files
-    reference_data = pd.read_csv('/home/user/python/reference_data.csv')
-    production_data = pd.read_csv('/home/user/python/current_data.csv')
+    reference_data = pd.read_csv('/home/user/project/reference_data.csv')
+    production_data = pd.read_csv('/home/user/project/current_data.csv')
 
     cat_features = ['conds', 'wdird', 'wdire']
     num_features = ['dewptm', 'hum', 'pressurem']
