@@ -40,19 +40,18 @@ project/
 ├── reference_data.csv             # Reference dataset
 ├── current_data.csv               # Production dataset
 ├── requirements.txt               # Required Python packages
-├── linearregression.py            # Main script
-├── ml_monitor                     # Monitoring configuration
+├── linearregression.py            # Main script                   
 ├── docker/                        # Pre-configured Grafana and Prometheus Docker setup
 │   ├── docker-compose.yml         # Docker Compose file to launch Grafana and Prometheus
 │   ├── prometheus/                # Prometheus configuration
 │   │   └── prometheus.yml         # Prometheus configuration file
 │   ├── grafana/                   # Grafana configuration
-│   │   ├── provisioning/          # Grafana provisioning setup
-│   │   │   ├── dashboard/         # Grafana dashboards
-│   │   │   │   └── <dashboard_files>.json  # Dashboard files
-│   │   │   └── datasource/        # Grafana datasource setup
-│   │   │       └── <datasource_files>.yml  # Datasource configuration files
-│   └── <other_docker_files>       # Other necessary files for Docker setup
+│       ├── provisioning/          # Grafana provisioning setup
+│           ├── dashboard/         # Grafana dashboards
+│           │   └── <dashboard_files>.json  # Dashboard files
+│           └── datasource/        # Grafana datasource setup
+│               └── <datasource_files>.yml  # Datasource configuration files
+│         
 └── README.md                      # Project documentation
 
 ```
