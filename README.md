@@ -1,6 +1,6 @@
 # ML Monitoring with Evidently, MLflow, Prometheus, and Grafana along mlmonitor real time tracking
 
-This project implements a comprehensive machine learning monitoring pipeline using **Evidently**, **MLflow**, **Prometheus Pushgateway**, and **Grafana**. It evaluates model performance, detects data drift, and enables real-time metric visualization.
+This project implements a comprehensive machine learning monitoring pipeline using **Evidently**, **MLflow**, **Prometheus Pushgateway**, and **Grafana**. It evaluates model performance, detects data drift, and enables real-time metric monitoring using ml_monitor.
 
 ---
 
@@ -16,30 +16,13 @@ This project implements a comprehensive machine learning monitoring pipeline usi
    - Real-time dashboards via Grafana.
 5. **Experiment Tracking:**
    - MLflow for artifact, parameter, and metric logging.
-
----
-
-## Requirements
-
-- Python 3.8+
-- Prometheus and Grafana set up locally or on a server.
-- MLflow
-- Evidently
-- Required Python packages:
-  ```bash
-  pip install -r requirements.txt
-  ```bash
-  pip install -r requirements.txt
-  ```bash
-  pip install -r requirements.txt
-
 ---
 
 ## File Structure
 
 ```
 project/
-├── ml_monitor                     # Stores Evidently reports
+├── ml_monitor                     # Stores configuration for monitoring and logging data to prometheus
 ├── reference_data.csv             # Reference dataset
 ├── current_data.csv               # Production dataset
 ├── requirements.txt               # Required Python packages
@@ -55,7 +38,7 @@ project/
 │           └── datasource/        # Grafana datasource setup
 │               └── <datasource_files>.yml  # Datasource configuration files
 │         
-└── README.md                      # Project documentation
+└── setup.py                     # for installing and starting ml_monitor
 
 ```
 
@@ -67,46 +50,69 @@ project/
    ```bash
    git clone <repository_url>
    ```
-
 2. Navigate to the project directory:
    ```bash
    cd project
    ```
-
-3. Install dependencies:
+3. Install mlflow in th rproject folder
+   ```bash
+   pip install mlflow
+   mlflow server \
+   --backend-store-uri sqlite:///mlflow.db \
+   --default-artifact-root ./mlruns \
+   --host 0.0.0.0 \
+   --port 5000
+   ```
+2. Install requirements
    ```bash
    pip install -r requirements.txt
    ```
-
-4. Set up Prometheus Pushgateway:
-   Ensure it is running on `localhost:9091` or your desired server.
-
-5. Set up Grafana:
-   - Import the provided `grafana_dashboard.json` for pre-configured visualization.
+3. Install ml_monitor
+   ```bash
+   pip install ml_monitor
+   ```
+4. Install evidently ai
+   ```bash
+   pip install evidently
+   ```
+5. Run docker compose up -d
+   - docker-compose up -d (in case it gives error than try docker compose up -d)
 
 ---
 
 ## Usage
 
-1. **Run the main script:**
-   ```bash
-   python main.py
-   ```
-
-2. **Access MLflow Tracking UI:**
+1. **open terminal:**
    Ensure MLflow server is running on `http://localhost:5000`. To start:
    ```bash
    mlflow ui
    ```
 
-3. **View Prometheus Metrics:**
-   Metrics are pushed to Prometheus Pushgateway and accessible at `http://localhost:9091`.
+2. **Access MLflow Tracking UI:**
+    ```bash
+   python linearregression.py --save-model
+   ```
+In case you are not able to see system metrics in mlflow ui then in terminal run following cmd and save model again
+ ```bash
+   export MLFLOW_ENABLE_SYSTEM_METRICS_LOGGING=true
+   ```
+4. **View Mlflow ui:**
+   Mlflow user interface accessible at `http://localhost:5000`.
+   
+5. **View Prometheus Metrics:**
+   Metrics are pushed to Prometheus   accessible at `http://localhost:9090`.
 
-4. **Visualize Metrics in Grafana:**
+6. **View Prometheus Pushgateway Metrics:**
+   Metrics are pushed to Prometheus Pushgateway and accessible at `http://localhost:9091`.   
+
+7. **Visualize Metrics in Grafana:**
    - Access Grafana dashboard via `http://localhost:3000`.
    - Use Prometheus as the data source.
-
+   - user: admin
+   - password: ml_monitor
 ---
+
+
 
 ## Monitored Metrics
 
@@ -136,5 +142,5 @@ Feel free to fork this repository and submit a pull request with your updates.
 
 ## Contact
 
-For queries or support, contact [Your Name/Email].
+For queries or support, contact [Shalini Chauhan / 1shalinichauhan@gmail.com].
 
