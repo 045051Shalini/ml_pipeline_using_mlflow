@@ -76,8 +76,9 @@ project/
    pip install evidently
    ```
 5. Run docker compose up -d
+   ```bash
    - docker-compose up -d (in case it gives error than try docker compose up -d)
-
+   ```
 ---
 
 ## Usage
