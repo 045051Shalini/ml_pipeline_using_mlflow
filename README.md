@@ -1,21 +1,25 @@
 # ML Monitoring with Evidently AI, MLflow, Prometheus, and Grafana along ml_monitor real time tracking
 
-This project implements a comprehensive machine learning monitoring pipeline using **Evidently AI**, **MLflow**, **Prometheus**, and **Grafana**. It evaluates model performance, detects data drift, and enables real-time metrics monitoring using ml_monitor.
+This repository showcases a comprehensive machine learning pipeline designed for efficient experiment tracking, model monitoring, and performance visualization. The pipeline integrates state-of-the-art tools  **Evidently AI**, **MLflow**, **Prometheus**, and **Grafana** to ensure robust data drift detection, real-time metric logging, and insightful visualizations.
 
 ---
 
-## Features
+## Overview
+**Experiment Tracking with MLflow**
+MLflow is used to run and manage machine learning experiments. It tracks model parameters, metrics, and artifacts for reproducibility and comparison.
 
-1. **Drift Detection:**
-   - Identify Data Drift and Target Drift using Evidently AI.
-2. **Model Monitoring:**
-   - Metrics include MSE, R² Score, Prediction Accuracy, and Drift Scores.
-3. **Real-Time Metrics Push:**
-   - Prometheus Pushgateway for exporting metrics.
-4. **Visualization:**
-   - Real-time dashboards via Grafana.
-5. **Experiment Tracking:**
-   - MLflow for artifact, parameter, and metric logging.
+**Data Drift Detection with Evidently AI**
+Evidently AI monitors and calculates data drift to ensure the model remains reliable in production.
+
+**Metric Logging with Prometheus Pushgateway**
+Performance metrics and drift data are pushed to Prometheus Pushgateway, ensuring a centralized and scalable logging mechanism.
+
+**Visualization with Grafana**
+Grafana is used to create real-time dashboards for visualizing metrics logged in Prometheus.
+
+**Monitoring with ML Monitor**
+ML Monitor provides a framework to track model health and operational metrics, ensuring the pipeline remains robust and production-ready.
+
 ---
 
 ## File Structure
