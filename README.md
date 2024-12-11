@@ -107,10 +107,7 @@ Before running follwoing commnad replace the path of reference and production da
 Experiment will be seen as saved on terminal as following
 ![image](https://github.com/user-attachments/assets/15789e65-4f42-4ba6-b541-b44254c2e95f)
 
-In case you are not able to see system metrics in mlflow ui then in terminal run following cmd and save model again
- ```bash
-   export MLFLOW_ENABLE_SYSTEM_METRICS_LOGGING=true
-   ```
+
 4. **View Mlflow ui:**
    Mlflow user interface accessible at `http://localhost:5000`.
 
@@ -119,6 +116,10 @@ Once the experiment will be saved following reports and metrics can be seen
   ![Screenshot 2024-12-12 041847](https://github.com/user-attachments/assets/d6ea204d-2b0d-4bbc-a5f3-0ba1e32a4601)
   ![Screenshot 2024-12-12 041938](https://github.com/user-attachments/assets/cebac03b-474c-4077-a5c2-05c85803b778)
   ![Screenshot 2024-12-12 042005](https://github.com/user-attachments/assets/7da0f877-a911-4529-9a55-6deb05977145)
+ In case you are not able to see system metrics in mlflow ui then in terminal run following cmd and save model again
+ ```bash
+   export MLFLOW_ENABLE_SYSTEM_METRICS_LOGGING=true
+   ```
   ![Screenshot 2024-12-12 042020](https://github.com/user-attachments/assets/03c3d526-46dc-4c6e-a178-d3bc6890af44)
   ![Screenshot 2024-12-12 042055](https://github.com/user-attachments/assets/45e73612-d497-4a4a-8504-aa4c5f3ba506)
   ![Screenshot 2024-12-12 042114](https://github.com/user-attachments/assets/b8f78a63-9388-4f17-b6e3-955b3608b60a)
