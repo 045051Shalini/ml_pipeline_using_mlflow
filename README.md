@@ -54,7 +54,7 @@ project/
    ```bash
    cd project
    ```
-3. Install mlflow in th rproject folder
+3. Install mlflow in the project folder
    ```bash
    pip install mlflow
    mlflow server \
@@ -93,14 +93,14 @@ project/
    mlflow ui
    ```
 2. **Open another terminal:**
-Before running follwoing commnad replace the path of reference and production data with your path in linearregression.py file as following:
+Before running follwoing commnad replace the path of reference and production data with your path in linearregression.py. The path will be found in these two lines:
     reference_data = pd.read_csv('/home/user/project/reference_data.csv')
     production_data = pd.read_csv('/home/user/project/current_data.csv')
  Then run:  
   ```bash
    python linearregression.py --save-model
    ```
-Experiment will be seen as aved on therminal as following
+Experiment will be seen as saved on terminal as following
 ![image](https://github.com/user-attachments/assets/15789e65-4f42-4ba6-b541-b44254c2e95f)
 
 In case you are not able to see system metrics in mlflow ui then in terminal run following cmd and save model again
