@@ -76,10 +76,11 @@ project/
 4. Install evidently ai
    ```bash
    pip install evidently
+   pip install --upgrade evidently
    ```
 5. Run docker compose up -d
    ```bash
-   - docker-compose up -d (in case it gives error than try docker compose up -d)
+    docker-compose up -d (in case it gives error than try docker compose up -d)
    ```
 ---
 
