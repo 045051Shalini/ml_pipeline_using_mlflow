@@ -70,6 +70,7 @@ project/
 3. Install ml_monitor
    ```bash
    pip install ml_monitor
+   pip install .
    ```
 4. Install evidently ai
    ```bash
