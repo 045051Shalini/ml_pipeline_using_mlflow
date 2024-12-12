@@ -1,4 +1,4 @@
-# ML Monitoring with Evidently AI, MLflow, Prometheus, and Grafana along ml_monitor real time tracking
+# ML Monitoring with Evidently AI, MLflow, Prometheus, and Grafana with ml_monitor real time tracking
 
 This repository showcases a comprehensive machine learning pipeline designed for efficient experiment tracking, model monitoring, and performance visualization. The pipeline integrates state-of-the-art tools  **Evidently AI**, **MLflow**, **Prometheus**, and **Grafana** to ensure robust data drift detection, real-time metric logging, and insightful visualizations.
 
