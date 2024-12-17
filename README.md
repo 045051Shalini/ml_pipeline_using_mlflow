@@ -156,6 +156,16 @@ Once the experiment will be saved following reports and metrics can be seen
 | Target Drift Score   | Evidently      |
 
 ---
+## Acknowledgments
+
+I would like to extend my gratitude to the following resources that greatly helped in shaping this project:
+
+- [Chamathka Deemanthi's Medium article](https://medium.com/@chamathka3deemanthi/implement-end-to-end-project-with-mlflow-evidently-ai-and-grafana-83175ea75c89) for providing a detailed guide on implementing an end-to-end project with MLflow, Evidently AI, and Grafana.
+- [Sohini Roychowdhury's GitHub repository](https://github.com/sohiniroych/ML-Monitoring-with-Grafana) for an excellent example of ML monitoring with Grafana.
+
+These resources were invaluable in understanding and implementing the core aspects of this project.
+
+---
 
 ## Contributing
 
