@@ -20,6 +20,9 @@ Grafana is used to create real-time dashboards for visualizing metrics logged in
 **Monitoring with ML Monitor**
 ML Monitor provides a framework to track model health and operational metrics, ensuring the pipeline remains robust and production-ready.
 
+
+![Screenshot 2024-12-17 181725 (1)](https://github.com/user-attachments/assets/f3b19d6e-53ce-4d31-a688-f609aa8d9f8f)
+
 ---
 
 ## File Structure
