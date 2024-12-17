@@ -175,7 +175,7 @@ Feel free to fork this repository and submit a pull request with your updates.
 
 ## License
 
-[MIT License](LICENSE)
+[MIT License](https://github.com/045051Shalini/ml_pipeline_using_mlflow/blob/main/LICENSE)
 
 ---
 
